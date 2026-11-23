@@ -55,3 +55,150 @@ with Supabase-backed content management.
 
 ---
 
+## System Architecture
+
+Dewan follows a modern full-stack architecture using Next.js and Supabase.
+
+```mermaid
+flowchart TD
+    A[Website Visitors] --> B[Next.js Application]
+    B --> C[Public Website]
+    B --> D[Admin Dashboard]
+    C --> E[Supabase Database]
+    D --> F[Supabase Authentication]
+    D --> E
+    D --> G[Supabase Storage]
+    C --> H[Feedback API]
+    H --> E
+```
+
+### Architecture Components
+
+| Component | Responsibility |
+|---|---|
+| Next.js | Application routing and server-side rendering |
+| React | Reusable user interface components |
+| TypeScript | Type-safe application development |
+| Tailwind CSS | Responsive interface styling |
+| Supabase Database | Storing poets, poetry, and other records |
+| Supabase Authentication | User authentication for administrative access |
+| Supabase Storage | Managing uploaded media files |
+| Next.js API Routes | Server-side operations such as feedback handling |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Before running the project locally, install:
+
+- Node.js 20 or later
+- npm
+- Git
+- Access to a configured Supabase project
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/miksi0078/dewan.git
+```
+
+Navigate to the project:
+
+```bash
+cd dewan
+```
+
+Install the dependencies:
+
+```bash
+npm ci
+```
+
+### Environment Configuration
+
+Create a `.env.local` file in the project's root directory.
+
+Configure the environment variables:
+
+```dotenv
+NEXT_PUBLIC_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_PUBLIC_ANON_KEY
+SUPABASE_SERVICE_ROLE_KEY=YOUR_PRIVATE_SERVICE_ROLE_KEY
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+The Supabase database schema is located in
+`supabase/schema.sql`.
+
+Apply the schema to your own Supabase project before running the application.
+
+**Security:** Never commit `.env.local`, private API keys, or service-role credentials to GitHub.
+
+### Start Development Server
+
+```bash
+npm run dev
+```
+
+Open:
+
+http://localhost:3000
+
+### Production Build
+
+```bash
+npm run build
+```
+
+To start the production server locally:
+
+```bash
+npm start
+```
+
+---
+
+## Repository Structure
+
+```text
+dewan/
+├── src/
+│   ├── app/
+│   │   ├── (site)/
+│   │   ├── admin/
+│   │   ├── api/
+│   │   └── auth/
+│   ├── components/
+│   ├── lib/
+│   └── middleware.ts
+├── supabase/
+│   ├── schema.sql
+│   └── seed_optional.sql
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+## Project Status
+
+Dewan is an academic and personal web development project.
+
+The repository documents the application's implementation and development. Individual deployment features should be tested before production use.
+
+## Developer
+
+**Muhammad Ilyas**
+
+BS Artificial Intelligence  
+University of Central Punjab, Lahore
+
+[GitHub Profile](https://github.com/miksi0078)
+```
+
