@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Dewan monogram">
+  <rect width="128" height="128" rx="28" fill="#143B34"/>
+  <rect x="7" y="7" width="114" height="114" rx="22" fill="none" stroke="#D2A653" stroke-width="2" opacity="0.42"/>
+  <path d="M40 32V96" fill="none" stroke="#D2A653" stroke-width="10" stroke-linecap="round"/>
+  <path d="M41 32H58C82 32 97 46 97 64C97 82 82 96 58 96H41" fill="none" stroke="#D2A653" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M61 64H74" fill="none" stroke="#F4D999" stroke-width="3" stroke-linecap="round" opacity="0.88"/>
+</svg>
