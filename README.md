@@ -55,6 +55,42 @@ with Supabase-backed content management.
 
 ---
 
+## Website Preview
+
+### Desktop Homepage
+
+<p align="center">
+  <img src="./screenshots/dewan-desktop.png"
+       alt="Dewan desktop homepage"
+       width="100%">
+</p>
+
+### Poetry Browsing
+
+<p align="center">
+  <img src="./screenshots/dewan-browse.png"
+       alt="Dewan poetry categories and featured poet"
+       width="100%">
+</p>
+
+### Poet Directory
+
+<p align="center">
+  <img src="./screenshots/dewan-poets.png"
+       alt="Dewan poet directory"
+       width="100%">
+</p>
+
+### Mobile Experience
+
+<p align="center">
+  <img src="./screenshots/dewan-mobile.png"
+       alt="Dewan mobile homepage"
+       width="40%">
+</p>
+
+---
+
 ## System Architecture
 
 Dewan follows a modern full-stack architecture using Next.js and Supabase.
